@@ -1,0 +1,770 @@
+
+@font-face {
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/prata/Prata-Regular.woff2") format("woff2"),
+    url("../fonts/prata/Prata-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/raleway/Raleway-Light.woff2") format("woff2"),
+    url("../fonts/raleway/Raleway-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/raleway/Raleway-Regular.woff2") format("woff2"),
+    url("../fonts/raleway/Raleway-Regular.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/raleway/Raleway-Medium.woff2") format("woff2"),
+    url("../fonts/raleway/Raleway-Medium.woff") format("woff");
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-style: normal;
+
+}
+
+:root {
+  --white-color: #fff;
+  --color-black: #000;
+  --yellow: #faca47;
+  --beige: #fdfaf4;
+  --brown: #ad2d11;
+  --second-black: #181515;
+  --grey: #fdfaf4;
+
+  --animation-transition: .3s ease;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-title {
+  padding-left: 95px;
+  font-family: "Prata";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--brown);
+}
+
+.btn-reset {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+}
+
+.container-header {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+}
+
+.header-nav {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.header-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 67px;
+}
+
+.header-nav__link {
+  outline: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-black);
+  -webkit-transition: color var(--animation-transition);
+  -o-transition: color var(--animation-transition);
+  transition: color var(--animation-transition);
+}
+
+.header-nav__link:focus-visible,
+.header-nav__link:hover {
+  color: var(--brown);
+}
+
+.header-nav__link:active {
+  color: var(--yellow);
+}
+
+
+
+/* hero */
+
+.hero {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 732px;
+  background: url("../img/hero/hero.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.hero__inner {
+  position: relative;
+  bottom: 17px;
+  left: 53px;
+}
+
+.hero__title {
+  margin-bottom: 8px;
+  font-family: "Prata";
+  font-size: 48px;
+  color: var(--brown);
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero__text {
+  position: relative;
+  font-family: "Raleway";
+  font-size: 24px;
+  color: var(--color-black);
+  line-height: normal;
+  text-align: center;
+}
+
+/* about-city */
+
+
+.container-about {
+  padding-top: 200px;
+  padding-bottom: 123px;
+  background: var(--beige);
+}
+
+.about-city__title {
+  margin-bottom: 57px;
+}
+
+.about-city__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-city__img {
+  margin-right: 124px;
+}
+
+.about-city__content {
+  height: 379px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-city__text {
+  width: 315px;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-black);
+}
+
+.about-city__btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.about-city__circle, .about-city__path {
+  -webkit-transition: stroke var(--animation-transition);
+  -o-transition: stroke var(--animation-transition);
+  transition: stroke var(--animation-transition);
+}
+
+.about-city__svg:hover .about-city__circle  {
+  stroke: var(--yellow);
+}
+
+.about-city__svg:hover .about-city__path, .about-city__svg:focus-visible .about-city__path {
+  stroke: var(--yellow);
+}
+
+.about-city__svg:active .about-city__circle {
+  stroke: var(--color-black);
+}
+
+.about-city__svg:active .about-city__path {
+  stroke: var(--color-black);
+}
+
+.about-city-descr {
+  background-color: var(--white-color);
+  padding: 53px 0;
+}
+
+.container-description {
+  padding-left: 95px;
+  padding-top: 140px;
+  padding-bottom: 169px;
+}
+
+.about-city-descr__text {
+  position: relative;
+  display: block;
+  max-width: 1045px;
+  font-family: "Prata";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 54px;
+  color: var(--color-black);
+}
+
+.about-city-descr__text::before {
+  position: absolute;
+  content: "";
+  right: -59px;
+  bottom: 35px;
+  width: 190px;
+  height: 267px;
+  background: url("../img/about-city/Petr-1.png");
+}
+
+.about-city-descr__text::after {
+  position: absolute;
+  content: "";
+  left: 79px;
+  top: 36px;
+  width: 201px;
+  height: 271px;
+  background: url("../img/about-city/vintage-vase.png");
+}
+
+/* history */
+
+.container-history {
+  padding-top: 124px;
+  padding-bottom: 200px;
+  background-color: var(--beige);
+}
+
+.history__title {
+  margin-bottom: 53px;
+}
+
+.history__list {
+  max-width: 976px;
+  margin: 0 auto;
+  counter-reset: counter;
+}
+
+.list__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list__card:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.list__card:not(:nth-child(2n)) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.list__card:nth-child(2n) .list__card__content {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.list__card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.list__card__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: -27px;
+  width: 1px;
+  background-color: var(--yellow);
+  left: -0.5px;
+}
+
+.list__card:nth-child(2n) .list__card__content::before {
+  left: auto;
+  right: -0.5px;
+}
+
+.list__card:first-child .list__card__content::before {
+  top: 50%;
+}
+
+.list__card:last-child .list__card__content::before {
+  bottom: 50%;
+}
+
+.list__card__content::after {
+  content: counter(counter);
+  counter-increment: counter;
+  position: absolute;
+
+  font-family: "Prata";
+  font-size: 18px;
+  line-height: 18px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  background-color: var(--yellow);
+  color: #fff;
+  border-radius: 100%;
+}
+
+.list__card:nth-child(2n) .list__card__content::after {
+  left: auto;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%)
+}
+
+.list__card__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.list__card__title,
+.list__card__text {
+  height: 50%;
+  margin: 0;
+  padding: 12px 30px;
+}
+
+.list__card__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: "Prata";
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.list__card__title::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: 0;
+  height: 1px;
+  background-color: var(--yellow);
+  bottom: -0.5px;
+}
+
+.list__card__text {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: var(--color-black);
+}
+
+.list__card__right {
+  padding: 12px;
+  border: 1px solid var(--yellow);
+  border-radius: 100%;
+  max-width: 176px;
+  width: 100%;
+}
+
+.list__card__image {
+  height: 150px;
+  border-radius: 100%;
+}
+
+.list__card__image img {
+  border-radius: 100%;
+}
+
+/* attraction */
+
+.attraction {
+  padding-top: 125px;
+  padding-bottom: 80px;
+}
+
+
+.container-attraction {
+  padding: 0 95px;
+}
+
+.attraction__title {
+  padding-left: 0;
+  margin-bottom: 157px;
+}
+
+.attraction__description,
+.travel-budget__description {
+  margin-bottom: 180.5px;
+  margin-left: auto;
+  width: 676px;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-black);
+}
+
+.catalog__item {
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 0.5px solid rgb(209, 197, 197);
+  padding: 76px 0 98px 0;
+  -webkit-transition: border-color var(--animation-transition);
+  -o-transition: border-color var(--animation-transition);
+  transition: border-color var(--animation-transition);
+}
+
+.catalog__item:hover,
+.catalog__item:focus-visible,
+.catalog__item:active {
+  border-color: var(--yellow);
+}
+
+.catalog__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__title {
+  width: 187px;
+  font-family: "Prata";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.catalog__item:nth-child(2) .catalog__title,
+.catalog__item:nth-child(5) .catalog__title {
+  line-height: 32px;
+}
+
+.catalog__img {
+  margin-right: 24px;
+}
+
+.catalog_description {
+  width: 476px;
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 26px;
+  -webkit-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.catalog_description:first-child {
+  margin-bottom: 11px;
+}
+
+/* travel-budget */
+
+.travel-budget-container {
+  padding: 0 95px;
+  padding-top: 124px;
+  background-color: var(--beige);
+}
+
+.travel-budget__title {
+  padding-left: 0;
+  margin-bottom: 57px;
+}
+
+.travel-budget__description {
+  margin-bottom: 200px;
+}
+
+.travel-budget__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.docket__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 276px;
+  padding: 40px 82px 16px 83px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.docket__item:nth-child(2) {
+  padding: 40px 27px 16px 28px;
+}
+
+.docket__img {
+  margin-bottom: 34px;
+}
+
+.docket__title {
+  margin-bottom: 16px;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  color: var(--color-black);
+}
+
+.docket__text {
+  font-family: "Prata";
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* map */
+
+.card-container {
+  padding-top: 245px;
+  background-color: var(--beige);
+}
+
+.map {
+  width: 1366px;
+  height: 476px;
+  margin: 0 auto;
+}
+
+.card__title {
+  margin-bottom: 55px;
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+[class*="ground-pane"] {
+  -webkit-filter: hue-rotate(215deg);
+          filter: hue-rotate(215deg);
+}
+
+/* footer */
+
+.container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--second-black);
+  padding: 46px 229px 24px 95px;
+  height: 200px;
+}
+
+.copyright__year {
+  outline: 0;
+  margin-right: 57px;
+}
+
+.copyright__year,
+.copyright__policy {
+  outline: none;
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--grey);
+}
+
+.copyright__policy:focus-visible,
+.copyright__policy:hover {
+  color: var(--yellow);
+}
+
+.copyright__policy:active {
+  color: var(--brown);
+}
+
+.footer-nav {
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.footer-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 445px;
+  gap: 16px 155px;
+}
+
+.footer-nav__item {
+  width: calc((100% / 2) - (155px * 1) / 2);
+}
+
+
+.footer-nav__link {
+  outline: none;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--grey);
+  -webkit-transition: color var(--animation-transition);
+  -o-transition: color var(--animation-transition);
+  transition: color var(--animation-transition);
+}
+
+.footer-nav__link:focus-visible,
+.footer-nav__link:hover {
+  color: var(--yellow);
+}
+
+.footer-nav__link:active {
+  color: var(--brown);
+}
